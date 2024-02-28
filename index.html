@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="p-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .nav-link {
+            color: #fff;
+        }
+        a.nav-link.active {
+            color: black;
+            background-color: #fff;
+        }
+        .nav-item.nav-link.active {
+            background-color: black;
+        }
+        header {
+            background-color: black;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            color: white;
+        }
+        a.nav-link:hover {
+            color: #aaa7bd;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #fff;
+        } 
+        article.card {
+            justify-content: space-around;
+            
+        }
+    </style>
+    <title>Filos</title>
+</head>
+<body>
+    <header id="header-filos">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>filos</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end " id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item text-center "><a class="nav-link active" href="#inicio">início</a></li>
+                        <li class="nav-item text-center"><a class="nav-link" href="#artigos">artigos</a></li>
+                        <li class="nav-item text-center"><a class="nav-link" href="#sobre">sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="header-filos">
+        <div class="container" id="inicio">
+            <div id="carousel-filos mb-24" class="carousel carousel-fade slide mw-100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="https://olavete.com.br/wp-content/uploads/2024/02/platao-1024x576.jpg" alt="Platão">
+                        <div class="carousel-caption">
+                            <h2>Platão (427–347 a.C.)</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://humanidades.com/wp-content/uploads/2018/07/Descartes-e1573782880558.jpg" alt="René Descartes">
+                        <div class="carousel-caption">
+                            <h2>René Descartes (1596–1650)</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://r2.padrepauloricardo.org/uploads/episodio/frame/4959/thomas-hobbes-e-o-estado-absolutista-frame.jpg" alt="Thomas Hobbes">
+                        <div class="carousel-caption">
+                            <h2>Thomas Hobbes (1588–1679)</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://www.awebic.com/wp-content/uploads/2023/09/IMAGEM-DO-AWEBIC1-1-5.jpg" alt="Arthur Schopenhauer">
+                        <div class="carousel-caption">
+                            <h2>Arthur Schopenhauer (1788–1860)</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://omaringa.com.br/wp-content/uploads/2023/03/Nietzsche.jpg" alt="Friedrich Nietzsche">
+                        <div class="carousel-caption">
+                            <h2>Friedrich Nietzsche (1844–1900)</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-filos" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-filos" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-target="#carousel-filos" data-bs-slide-to="0"></button>
+                    <button data-bs-target="#carousel-ex" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#carousel-ex" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#carousel-ex" data-bs-slide-to="3"></button>
+                    <button data-bs-target="#carousel-ex" data-bs-slide-to="4"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="artigos" class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <article class="card">
+                        <img src="https://olavete.com.br/wp-content/uploads/2024/02/platao-1024x576.jpg" alt="Platão">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Platão
+                            </h4>
+                            <p> Fundou a Academia em Atenas e foi discípulo de Sócrates. Sua filosofia, expressa em diálogos como "A República", enfatiza a busca pela verdade e a realidade das ideias ou formas, argumentando que o mundo material é apenas uma sombra das formas perfeitas e eternas.</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-platao">Leia mais</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <article class="card">
+                        <img src="https://humanidades.com/wp-content/uploads/2018/07/Descartes-e1573782880558.jpg" alt="René Descartes">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                René Descartes
+                            </h4>
+                            <p> Conhecido como o pai da filosofia moderna. Sua obra "Discurso do Método" marca um ponto de virada ao propor um método sistemático de dúvida metódica, culminando na famosa frase "Cogito, ergo sum" (Penso, logo existo). Descartes defendia o racionalismo, a ideia de que o conhecimento é alcançado principalmente através da razão.</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-descartes">Leia mais</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <article class="card">
+                        <img src="https://r2.padrepauloricardo.org/uploads/episodio/frame/4959/thomas-hobbes-e-o-estado-absolutista-frame.jpg" alt="Thomas Hobbes">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Thomas Hobbes
+                            </h4>
+                            <p>Em sua obra "Leviatã", desenvolveu uma teoria política e moral que fundamenta o Estado como uma necessidade para conter a natureza humana egoísta e belicosa. Sua visão contratualista influenciou profundamente o pensamento político ocidental, destacando a importância do contrato social na formação da sociedade.</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-hobbes">Leia mais</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <article class="card">
+                        <img src="https://www.awebic.com/wp-content/uploads/2023/09/IMAGEM-DO-AWEBIC1-1-5.jpg" alt="Arthur Schopenhauer">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Arthur Schopenhauer
+                            </h4>
+                            <p>Reconhecido por sua filosofia pessimista e metafísica. Em "O Mundo como Vontade e Representação", ele argumenta que a essência última da realidade é a Vontade, uma força cega e irracional que subjaz a toda manifestação. Schopenhauer destaca a natureza trágica da existência e propõe a negação da Vontade como meio de alcançar a redenção do sofrimento humano.</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-schopenhauer">Leia mais</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-3">
+                    <article class="card">
+                        <img src="https://omaringa.com.br/wp-content/uploads/2023/03/Nietzsche.jpg" alt="Friedrich Nietzsche">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Friedrich Nietzsche
+                            </h4>
+                            <p>Famoso por sua crítica à moralidade tradicional e sua defesa do "além do bem e do mal". Em obras como "Assim Falou Zaratustra" e "Além do Bem e do Mal", Nietzsche propõe a ideia do "super-homem" como um ser que transcende os valores convencionais e cria seus próprios significados. Sua crítica radical da religião e da moralidade deixou um impacto duradouro no pensamento ocidental, influenciando áreas que vão desde a filosofia até a literatura e a psicologia.</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-nietzsche">Leia mais</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="sobre">
+            <div class="p-3 mt-3 mb-3 bg-dark text-white rounded mb-8" >
+                <h2>Sobre</h2>
+                <p>A filosofia, como disciplina fundamental da investigação humana, busca compreender a essência da existência, a natureza da realidade e a condição humana. Desde os primórdios da civilização, os filósofos têm explorado questões sobre o conhecimento, a ética, a política e a metafísica, contribuindo para moldar as percepções e os sistemas de pensamento ao longo da história.</p>
+            </div>
+        </div>
+    </div>
+    
+        <footer class="bg-secondary d-flex justify-content-center">&copy; 2024 Desenvolvido por @barbarasousilva</footer>
+    <div class="modal" id="modal-platao" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Platão (427–347 a.C.)
+                </div>
+                <div class="modal-body">
+                    
+A teoria de Platão, que é fundamental na filosofia ocidental, abrange muitos aspectos da realidade, incluindo a metafísica, a epistemologia, a ética e a política. Aqui estão alguns pontos principais da filosofia platônica:
+
+Teoria das Formas (ou Ideias): Uma das ideias centrais de Platão é a teoria das Formas. Ele argumentou que o mundo que percebemos através dos sentidos é apenas uma sombra imperfeita do mundo real, que é composto por Formas ou Ideias eternas e imutáveis. Por exemplo, há uma Forma de "justiça", que é perfeita e eterna, e todas as instâncias de justiça que encontramos no mundo físico são apenas imitações imperfeitas dessa Forma.
+
+Dualismo Metafísico: Platão sustentava uma visão dualista da realidade, onde o mundo sensível, material e mutável é contrastado com o mundo das Formas, que é imaterial, eterno e imutável. O mundo das Formas é considerado o verdadeiro objeto de conhecimento, enquanto o mundo sensível é apenas uma sombra dele.
+
+Teoria da Alma: Platão acreditava na imortalidade da alma e em sua preexistência antes de ser encarnada. Ele dividia a alma em três partes: a racional, a irascível e a concupiscente. A alma racional busca a verdade e a sabedoria, a alma irascível está relacionada às emoções e ao espírito de luta, enquanto a alma concupiscente está associada aos desejos materiais e físicos.
+
+Epistemologia: Platão sustentava que o conhecimento verdadeiro só pode ser alcançado através da razão e da contemplação das Formas. Ele desenvolveu o conceito de "anamnese", argumentando que a verdadeira compreensão não é adquirida, mas recordada pela alma, que já conhecia as Formas antes de nascer no mundo físico.
+
+Ética e Política: Platão argumentou que a busca pela sabedoria e pela virtude é o objetivo supremo da vida humana. Em sua obra "A República", ele descreve uma teoria ideal de governo, onde os governantes são filósofos-reis, que governam em nome do bem comum, em oposição ao egoísmo e à busca pelo poder.
+
+Esses são apenas alguns aspectos da rica filosofia de Platão, que continua a influenciar o pensamento ocidental até os dias de hoje
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-descartes" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    René Descartes (1596–1650)
+                </div>
+                <div class="modal-body">
+                    René Descartes foi um filósofo, matemático e cientista francês do século XVII, conhecido por ser um dos fundadores do racionalismo ocidental e por suas contribuições para a geometria analítica. Uma de suas obras mais influentes é "Discurso do Método" (1637), onde ele apresenta sua filosofia e seu método para alcançar o conhecimento seguro.
+
+A teoria de Descartes é baseada no método da dúvida metódica, no qual ele tenta eliminar todas as crenças que não possam ser provadas de forma indubitável, buscando assim alcançar um fundamento sólido para o conhecimento. Essa dúvida radical o leva a questionar até mesmo as percepções sensoriais e as verdades aceitas pela tradição.
+
+Descartes é famoso por sua frase "Cogito, ergo sum" (Penso, logo existo), que ele apresenta como a única verdade indubitável que encontra em sua busca filosófica. A partir dessa certeza de sua própria existência como um ser pensante, Descartes tenta reconstruir todo o conhecimento, utilizando a razão e a matemática como guias seguras para chegar à verdade.
+
+Outra contribuição importante de Descartes é sua concepção dualista do mundo, que distingue entre mente (res cogitans) e corpo (res extensa). Segundo essa teoria, mente e corpo são duas substâncias diferentes que interagem entre si na experiência humana.
+
+Em resumo, a teoria de Descartes é caracterizada pelo seu ênfase no papel da razão e do método para alcançar o conhecimento seguro, assim como pelo seu dualismo entre mente e corpo. Sua influência na filosofia e na ciência foi significativa, e suas ideias continuam sendo objeto de estudo e debate até os dias de hoje.
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-hobbes" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Thomas Hobbes (1588–1679)
+                </div>
+                <div class="modal-body">
+                    Thomas Hobbes foi um filósofo inglês do século XVII, conhecido principalmente por sua obra "Leviatã" (1651), na qual apresenta sua teoria política e moral. Hobbes é considerado um dos principais teóricos do contratualismo e do absolutismo.
+
+A teoria política de Hobbes parte de um estado de natureza hipotético, no qual os seres humanos vivem em um estado de guerra de todos contra todos, onde a vida é "solitária, pobre, sórdida, brutal e curta". Nesse estado, não há leis nem autoridades para regular as relações entre as pessoas, o que leva a um constante estado de insegurança e conflito.
+
+Para escapar desse estado de natureza, Hobbes argumenta que os indivíduos concordam em renunciar a parte de sua liberdade natural em favor de um soberano absoluto, que detém o poder supremo e é responsável por garantir a paz e a segurança através do estabelecimento de leis e da aplicação da coerção. Esse contrato social é o fundamento do Estado soberano, representado pela figura do Leviatã, que detém o monopólio legítimo do uso da força coercitiva.
+
+Além de sua teoria política, Hobbes também contribuiu para a filosofia moral. Ele sustentava que o desejo humano fundamental é o de autopreservação, e que todas as ações humanas são motivadas pelo auto-interesse. Hobbes defendia um egoísmo ético, no qual os indivíduos buscam maximizar seu próprio bem-estar, sem consideração pelos interesses dos outros, a menos que seja do seu interesse fazê-lo.
+
+Em suma, a teoria de Thomas Hobbes enfatiza a importância do Estado soberano na manutenção da ordem e da segurança, e fundamenta-se na noção de que os seres humanos são motivados pelo auto-interesse e precisam de autoridades fortes para evitar o caos e o conflito. Suas ideias tiveram um impacto significativo no desenvolvimento da filosofia política moderna.
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-schopenhauer" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Arthur Schopenhauer (1788–1860)
+                </div>
+                <div class="modal-body">
+                    Arthur Schopenhauer foi um filósofo alemão do século XIX, conhecido por suas ideias sobre a vontade, o pessimismo e a metafísica. Sua obra principal é "O Mundo como Vontade e Representação" (1818).
+
+A teoria central de Schopenhauer gira em torno do conceito de "vontade". Para ele, a vontade é a essência subjacente de todas as coisas, o impulso primordial que motiva a existência e determina o curso dos eventos no mundo. A vontade é cega, insaciável e incontrolável, e está presente em todas as formas de vida, desde os seres humanos até os objetos inanimados. Schopenhauer via a vontade como uma força irracional e muitas vezes conflitante, que causa sofrimento e insatisfação na vida das pessoas.
+
+Uma consequência importante de sua teoria da vontade é sua visão pessimista da existência humana. Schopenhauer argumentava que a vida é essencialmente marcada pelo sofrimento e pela insatisfação, uma vez que a vontade está sempre buscando algo além do que é alcançado. Ele via o desejo como a fonte fundamental do sofrimento humano, e acreditava que a liberação do desejo era o caminho para alcançar a tranquilidade e a paz de espírito.
+
+Além disso, Schopenhauer fez contribuições significativas para a metafísica, propondo uma visão do mundo como uma representação subjetiva da vontade. Ele argumentava que o mundo que percebemos não é a realidade em si, mas apenas uma manifestação da vontade através dos nossos sentidos e da nossa mente.
+
+No geral, a teoria de Schopenhauer oferece uma visão única e profundamente pessimista da condição humana, enfatizando o papel dominante da vontade na vida e na existência do indivíduo. Suas ideias tiveram um impacto duradouro no pensamento filosófico, influenciando pensadores como Nietzsche, Freud e muitos outros.
+
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-nietzsche" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Friedrich Nietzsche (1844–1900)
+                </div>
+                <div class="modal-body">
+                    
+Friedrich Nietzsche foi um filósofo alemão do século XIX conhecido por suas críticas à moral tradicional, sua defesa do individualismo e sua abordagem iconoclástica em relação às ideias estabelecidas. Sua obra é vasta e complexa, mas algumas ideias-chave em sua filosofia incluem:
+
+Vontade de Poder: Nietzsche propôs que a "vontade de poder" é a força motriz fundamental por trás de todas as ações humanas e naturais. Para ele, a vida é uma constante busca por poder, não no sentido de dominação sobre os outros, mas como uma busca por autoafirmação e realização pessoal.
+
+Além do Bem e do Mal: Nietzsche questionou as noções tradicionais de moralidade, argumentando que a moralidade convencional era baseada em uma "moral de rebanho" que reprimia a expressão genuína da individualidade e da criatividade. Ele propôs uma "moralidade além do bem e do mal", na qual os indivíduos determinam seus próprios valores com base em sua própria vontade de poder.
+
+Super-homem (Übermensch): Nietzsche apresentou a ideia do Übermensch, muitas vezes traduzido como "super-homem" ou "além-do-homem". Este é um ideal humano que transcende as limitações impostas pela moralidade convencional e pelas normas sociais, buscando constantemente sua própria auto-superação e afirmando sua própria vontade de poder.
+
+Eterno Retorno: Nietzsche propôs a ideia do "eterno retorno", sugerindo que a vida deve ser vivida de tal maneira que estaríamos dispostos a repeti-la infinitamente, sem arrependimentos. Isso implica aceitar todos os aspectos da vida, tanto os prazeres quanto as dores, como partes integrantes da existência.
+
+Crítica à Religião e à Metafísica: Nietzsche foi um crítico ferrenho da religião organizada e da metafísica tradicional, argumentando que elas eram formas de escapismo que negavam a realidade terrena em favor de um além-mundo imaginário. Ele defendia uma abordagem mais afirmativa da vida terrena e uma rejeição das ilusões transcendentais.
+
+Essas são apenas algumas das principais ideias na filosofia de Nietzsche. Sua obra é rica em nuances e profundidade, e suas ideias continuam a ser objeto de debate e interpretação até os dias de hoje.
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./lib/bootstrap.bundle.js"></script>
+</body>
+</html>
